@@ -6,7 +6,7 @@ pipeline {
     stage ('SCM') {
       steps {
         echo "Git Checkout"
-        git 'https://github.com/RajivKumarVA/JenkinsProj.git'
+        git 'https://github.com/DineshPazhaniyandi/StaticApp.git'
       }
     }
     stage ('Validation') {
@@ -18,8 +18,8 @@ pipeline {
     stage ('Deploy Stage') {
       steps {
         echo "Deploy"
-        sh label: '', script: 'chmod 777 /home/ubuntu/workspace/Pipeline-Lab-Project/deployWeb.sh'
-        sh label: '', script: '/home/ubuntu/workspace/Pipeline-Lab-Project/deployWeb.sh'
+        sh label: '', script: 'chmod 777 /home/ubuntu/workspace/project_static/deployWeb.sh'
+        sh label: '', script: '/home/ubuntu/workspace/project_static/deployWeb.sh'
       }
     }
   }
