@@ -18,8 +18,8 @@ pipeline {
     stage ('Deploy Stage') {
       steps {
         echo "Deploy"
-        sh label: '', script: 'chmod 777 /home/ubuntu/workspace/project_static/deployWeb.sh'
-        sh label: '', script: '/home/ubuntu/workspace/project_static/deployWeb.sh'
+        sh label: '', script: 'chmod 777 /home/ubuntu/workspace/StaticHtmlProject/deployWeb.sh'
+        sh label: '', script: '/home/ubuntu/workspace/StaticHtmlProject/deployWeb.sh'
       }
     }
   }
